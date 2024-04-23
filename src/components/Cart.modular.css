@@ -1,0 +1,116 @@
+.cart-container{
+    width: 83%;
+    margin: 80px auto;
+    min-height: 450px;
+    background-color: white;
+    position: relative;
+}
+
+.emptyMsg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+}
+
+.cart-container > h3{
+    text-align: center;
+    user-select: none;
+}
+
+.cartItems{
+    width: 77%;
+    margin: 40px auto;
+}
+
+.reachBtn{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: 1px solid black;
+    background-color: black;
+    padding: 6px 20px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.deleteBtn{
+    border: 1px solid;
+    background-color: transparent;
+    margin-top: 10px;
+    padding: 5px 20px;
+}
+
+
+.deleteBtn:hover{
+    background-color: black;
+    color: white;
+}
+
+
+.cartItem{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px 0;
+    column-gap: 50px;
+}
+
+.cartItem > img{
+    width: 50%;
+    justify-self: flex-end;
+}
+
+.cartItem h3{
+    font-size: 1.5rem !important;
+}
+
+@media (max-width: 699px){
+    .buttonContainer{
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+        min-width: 107px;
+    }
+
+    .reachBtn{
+        margin-right: 0;
+        margin-top: 10px;
+    }
+
+    .deleteBtn{
+        margin-top: 0;
+    }
+
+    .cart-container{
+        width: 98%;
+    }
+    .cartItems{
+        width: 90%;
+    }
+
+    .cartItem{
+        display: flex;
+        column-gap: 20px;
+    }
+    .cartItem > img{
+        max-height: 170px;
+        object-fit: contain;
+        min-height: 184px;
+    }
+
+    .cartItem h3{
+        font-size: 1rem !important;
+    }
+}
+
+@media (min-width: 699px) and (max-width: 1000px){
+    .cartItem > img{
+        width: 100%;
+        max-height: 170px;
+        object-fit: contain;
+    }
+
+    .cartItem h3{
+        font-size: 1.3rem !important;
+    }
+}

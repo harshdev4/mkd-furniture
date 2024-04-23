@@ -1,0 +1,63 @@
+.navbar-fixed{
+    padding: 10px 0 !important;
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.mkd-logo{
+    mix-blend-mode: multiply;
+}
+
+.bg-beige {
+    background-color: #F5F5DC;
+}
+
+.navbar-toggler{
+    border: 0 !important;
+}
+
+.shoppingCart{
+    font-size: 30px;
+    position: absolute;
+    top: 0;
+    right: 80px;
+}
+
+.cart-menu-container{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 3vw;
+    display: none;
+}
+
+.shoppingCartMini{
+    display: none;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none !important;
+}
+
+@media (max-width: 991px){
+    .cart-menu-container{
+        display: flex;
+    }
+
+    .shoppingCart{
+        display: none;
+    }
+
+    .shoppingCartMini{
+        position: relative;
+        right: -20%;
+        font-size: 1.6rem;
+        display: block; 
+        color: #565956;
+    }
+}

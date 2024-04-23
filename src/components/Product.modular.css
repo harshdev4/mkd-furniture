@@ -1,0 +1,35 @@
+.product{
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    border: 1px solid rgb(221, 221, 160);
+    width: 30%;
+    margin: 0 auto;
+}
+
+.product > img{
+    width: 100%;
+    user-select: none;
+}
+
+.product > p{
+    padding: 10px 5px;
+}
+
+.product > h3{
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 0 5px 20px 5px;
+}
+
+@media (max-width:699px) {
+    .product{
+        width: 48%;
+    }
+
+    .product > h3 {
+        font-size: 1.2rem;
+    }
+    
+    
+}
